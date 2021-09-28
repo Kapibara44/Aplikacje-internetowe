@@ -4,12 +4,12 @@
 	<meta charset="utf-8" />
 	<title>Podsumowanie zamówienia</title>
 </head>
-
 <body>
-
 <?php
 	$paczkow = $_POST['paczkow'];
 	$grzebieni = $_POST['grzebieni'];
+	$suma = 0;
+
 	$suma = 0.99 * $paczkow + 1.29 * $grzebieni;
 
 echo<<<END
@@ -30,8 +30,6 @@ echo<<<END
 	<br /><a href="index.php">Powrót do strony głównej</a>
 
 END;
-
 ?>
-
 </body>
 </html>
